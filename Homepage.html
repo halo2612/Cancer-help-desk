@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="CH" content="html/css">
+	<title>
+		Cancer Help Desk
+	</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<style>
+		.body{
+			overflow-x: hidden;
+			margin-top: 0vh;
+			margin-left: 0vw;
+			margin-right: 0vw;
+			margin-bottom: 0vh;
+			background-color: #FFFDD0;
+		}
+		.header{
+			position: relative;
+			top: 0vh;
+			left: 0vw;
+			right: 0vw;
+			margin-top: 0vh;
+			margin-left: 0vw;
+			margin-right: 0vw;
+			margin-bottom: 0vh;
+			width: 100vw;
+			height: 37vh;
+		}
+		#name{
+			position: absolute;
+			top: 12vh;
+			left: 9vw;
+			color: black;
+			font-size: 10vh;
+			font-family: "Trebuchet MS",sans-serif;
+			font-weight: 100;
+		}
+		#motto{
+			position: absolute;
+			top: 24vh;
+			left: 11.7vw;
+			color: black;
+			font-size: 2vh;
+			font-family: "Trebuchet MS",sans-serif;
+			font-weight: 100;
+			font-style: italic;
+		}
+		#span{
+			color: blue;
+		}
+		#logo{
+			position: absolute;
+			top: 0vh;
+			left: 1vw;
+			width: 9%;
+			height: 100%;
+		}
+		.nav{
+			position: absolute;
+			right: 0vw;
+			top: 0vh;
+			color: black;
+			text-align: center;
+			font-family: monospace;
+			font-size: 3vh;
+			padding: 7vw;
+		}
+		.headerlinks:link,.headerlinks:visited{
+			color: black;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		.headerlinks:hover{
+			color: blue;
+			text-decoration: none;
+		}
+		.headerlinks:active{
+			color: blue;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		#currentpage{
+			color: black;
+			text-decoration: none;
+			border-bottom: solid .2vw;
+			padding: 1vw;
+		}
+		#currentpage:active{
+			color: blue;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		#donate{
+			color: white;
+			text-decoration: none;
+			padding: 1vw;
+			background-color: blue;
+			border: solid blue .1vw;
+		}
+		.section1{
+			position: relative;
+			top: 0vh;
+			right: 0vw;
+			left: 0vw;
+			width: 100vw;
+			height: 220vh;
+			margin-top: 0vh;
+			margin-left: 0vw;
+			margin-right: 0vw;
+			margin-bottom: 0vh;
+		}
+		#heading1{
+			position: absolute;
+			top: 0vh;
+			width: 100vw;
+			height: 20vh;
+			color: black;
+			font-size: 6vh;
+			font-family: "Times New Roman",monospace;
+			font-style: italic;
+			font-weight:200;
+			text-align: center;
+		}
+		#subheading1{
+			position: absolute;
+			top: 5vw;
+			left: 0vw;
+			width: 100vw;
+			height: 5vh;
+			color: black;
+			font-size: 3vh;
+			font-family: "Times New Roman",monospace;
+			font-weight:200;
+			text-align: center;
+		}
+		.info{
+			position: absolute;
+			top: 20vh;
+			left: 0vw;
+			right: 0vw;
+			color: black;
+			margin: 0vw;
+			width: 100vw;
+			height: 90vh;
+		}
+		#infodetails{
+			position: absolute;
+			top: 15vh;
+			left: 5vw;
+			text-align: left;
+			letter-spacing: 0.001vw;
+			font-size: 7vh;
+			font-family: "source sans pro",sans-serif;
+			font-weight: 300;
+			width: 45vw;
+		}
+		#infoheadingunderline{
+			position: absolute;
+			top: 10vh;
+			left: 0vw;
+			width: 21vw;
+			height: 0.4vh;
+			background-color: #ec008c;
+		}
+		#infopara1{
+			position: absolute;
+			top: 12vh;
+			left: 0vw;
+			text-align: left;
+			letter-spacing: normal;
+			font-size: 3vh;
+		}
+		#infopara2{
+			position: absolute;
+			top: 16vh;
+			left: 0vw;
+			text-align: left;
+			letter-spacing: normal;
+			font-size: 3vh;
+		}
+		#infopara3{
+			position: absolute;
+			top: 40vh;
+			left: 0vw;
+			text-align: left;
+			letter-spacing: normal;
+			font-size: 3vh;
+			border: solid blue 0.1vw;
+			padding: 1vw;
+			background-color: blue;
+			color: white;
+		}
+		#infoimg{
+			position: absolute;
+			top: 0vh;
+			right: 0vw;
+			height: 90vh;
+			width: 100vw;
+		}
+		.ourwork{
+			position: absolute;
+			top: 110vh;
+			left: 0vw;
+			right: 0vw;
+			color: black;
+			margin: 0vw;
+			width: 100vw;
+			height: 90vh;
+		}
+		#ourworkdetails{
+			position: absolute;
+			top: 15vh;
+			right: 5vw;
+			text-align: right;
+			letter-spacing: 0.001vw;
+			font-size: 7vh;
+			font-family: "source sans pro",sans-serif;
+			font-weight: 300;
+			width: 45vw;
+		}
+		#ourworkheadingunderline{
+			position: absolute;
+			top: 10vh;
+			right: 0vw;
+			width: 21vw;
+			height: 0.4vh;
+			background-color: blue;
+		}
+		#ourworkpara1{
+			position: absolute;
+			top: 12vh;
+			right: 0vw;
+			text-align: right;
+			letter-spacing: normal;
+			font-size: 3vh;
+		}
+		#ourworkpara2{
+			position: absolute;
+			top: 35vh;
+			right: 0vw;
+			text-align: left;
+			letter-spacing: normal;
+			font-size: 3vh;
+		}
+		#ourworkimg{
+			position: absolute;
+			top: 0vh;
+			right: 0vw;
+			height: 110vh;
+			width: 100vw;
+		}
+		footer{
+			background-color:#484848;
+			color: white;
+			font-size: 10px;
+			width: 100vw;
+		}
+		footer div.rig{
+			float: right;
+			margin-left: 0px;
+			margin-right: 45px;
+		}
+		footer div{
+			margin-left: 45px;
+		}
+	</style>
+</head>
+<body class="body">
+	<header class="header">
+		<img src="logo.png" alt="LOGO" id="logo">
+		<div id="name">
+			Help <span id="span">Desk</span>
+		</div>
+		<div id="motto">
+			Guidance. Assistance. Assurance.
+		</div>
+		<nav class="nav">
+			<a href="Homepage.html" title="main page" id="currentpage">HOME</a>
+			<a href="NGO_list.html" title="Our partners" class="headerlinks" target="_blank">OUR PARTNERS</a>
+			<a href="mailto:adityadev2612@gmail.com" class="headerlinks">CONTACT US</a>
+			<a href="Login.html" title="login" class="headerlinks" target="_blank">LOGIN</a>
+			<a href="registration.html" title="register" class="headerlinks" target="_blank">REGISTER</a>
+			<a href="Donate.html" title="Donate to our cause" id="donate" target="_blank">DONATE?</a>
+		</nav>
+	</header>
+	<section class="section1">
+		<div id="heading1">
+			"Cancer didn't bring me to my knees, it brought me to my feet."
+			<span id="subheading1">-Michael Douglas, actor and survivor of throat cancer</span> 
+		</div>
+		<article class="info">
+			<img src="1.jpeg" alt="img" id="infoimg">
+			<aside id="infodetails">
+				What Do We Do?
+				<div id="infoheadingunderline">
+					<!-- style this into an underline -->
+				</div>
+				<p id="infopara1">
+					Guidance. Assistance. Assurance. 
+				</p>
+				<p id="infopara2">
+					Three things of utmost importance that people fighting cancer require the most. We help those souls in need, guiding them to the best possible treatment centers for them and assisting them at each step, along the way. You may rest assured that with us, you will be recommended the best possible facilities for you, which will provide you with all the help you need, health-related, financially or otherwise. 
+				</p>
+				<p id="infopara3">
+					You aren’t alone in this battle.
+				</p>
+			</aside>
+		</article>
+		<article class="ourwork">
+			<img src="4.jpg" alt="img" id="ourworkimg">
+			<aside id="ourworkdetails">
+				Our Work
+				<div id="ourworkheadingunderline">
+					<!-- style this into an underline -->
+				</div>
+				<p id="ourworkpara1">
+					We analyse your requirements of treatment, lodging or financial aid, and accordingly connect you to NGOs which are best suited to assist you, to banks which are the most accommodating to sponsor your treatment and to HOA’s and other centers which will arrange for your stay for the duration of your treatment. With us, you will find all the help you need at one place.
+				</p>
+				<p>
+					<ul id="ourworkpara2">
+						<li>Over the last decade, we have helped out over a million fighters overcome this battle.</li>
+						<li>We have business affiliations with the top 10 NGO’s in Mumbai for cancer treatment.</li>
+						<li>Over 5 lakh HOA members and boarding administrators are registered with us.</li>
+						<li>Every year, we cater to over 50,000+ fighters, with nobody till date going away empty-handed.</li>
+					</ul>
+				</p>
+			</aside>
+		</article>
+	</section>
+	<footer>
+		<div class="rig">
+			<br>© 2020 HELP DESK India
+		</div>
+		<div>
+		<br><b>Disclaimer:</b> Please note that the products mentioned are to illustrate activities and the change that your donation can make to the lives of cancer patients.<br> Help Desk, based on the need on the ground, will allocate resources to areas that need funds the most.<br><br>Data Security: We take utmost precautions with your data, we will never share your information. We also do not store any sensitive information like your credit card or bank details.	
+		</div>
+	</footer>
+</body>
+</html>
