@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="CH" content="html/css">
+	<title>
+		register
+	</title>
+	<script type="text/javascript">
+	</script>
+	<style type="text/css">
+		.body{
+			overflow-x: hidden;
+			margin-top: 0vh;
+			margin-left: 0vw;
+			margin-right: 0vw;
+			margin-bottom: 0vh;
+			background-color: #FFFDD0;
+		}
+		.header{
+			position: relative;
+			top: 0vh;
+			left: 0vw;
+			right: 0vw;
+			margin-top: 0vh;
+			margin-left: 0vw;
+			margin-right: 0vw;
+			margin-bottom: 0vh;
+			width: 100vw;
+			height: 37vh;
+			background-color: #FFFDD0;
+		}
+		form{
+			margin-top: 100px;
+			margin-left: 250px;
+		}
+		#motto{
+			position: absolute;
+			top: 24vh;
+			left: 11.7vw;
+			color: black;
+			font-size: 2vh;
+			font-family: "Trebuchet MS",sans-serif;
+			font-weight: 100;
+			font-style: italic;
+		}
+		#span{
+			color: blue;
+		}
+		#logo{
+			position: absolute;
+			top: 0vh;
+			left: 1vw;
+			width: 9%;
+			height: 100%;
+		}
+		#name{
+			position: absolute;
+			top: 12vh;
+			left: 9vw;
+			color: black;
+			font-size: 10vh;
+			font-family: "Trebuchet MS",sans-serif;
+			font-weight: 100;
+		}
+		#span{
+			color: blue;
+		}
+		.nav{
+			position: absolute;
+			right: 0vw;
+			top: 0vh;
+			color: black;
+			text-align: center;
+			font-family: monospace;
+			font-size: 3vh;
+			padding: 7vw;
+		}
+		.headerlinks:link,.headerlinks:visited{
+			color: black;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		.headerlinks:hover{
+			color: blue;
+			text-decoration: none;
+		}
+		.headerlinks:active{
+			color: blue;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		#currentpage{
+			color: black;
+			text-decoration: none;
+			border-bottom: solid .2vw;
+			padding: 1vw;
+		}
+		#currentpage:active{
+			color: blue;
+			text-decoration: none;
+			padding: 1vw;
+		}
+		form.form1 input{
+			padding: 12px 20px;
+  			margin-top: 10px;
+  			box-sizing: border-box;
+  			width: 450px;
+		}
+		form.form1 input[type=text]:focus {
+ 		 	background-color: lightblue;
+		}
+		form.form1 button{
+			background-color: red;
+			border: none;
+  			color: white;
+  			padding: 16px 32px;
+  			text-decoration: none;
+ 			margin: 15px 2px;
+ 			cursor: pointer;
+ 			width: 450px;
+		}
+		.form-control{
+			margin: 20px;
+			position: relative;
+		}
+		.form-control label{
+			display: inline-block;
+			margin-bottom: 5px; 
+			border-radius: 5px;
+			font-size: 14px;
+			padding: 5px;
+		}
+		.form-control input{
+			width: 40%;
+		}
+		.form-control input:focus{
+			outline: 0;
+			border-color: #777;
+		}
+		button{
+			display: inline-block;
+			border-radius: 6px;
+			width: 40%;
+			margin-left: 18px;
+			border:none;
+			outline: none;
+			background-color: red;
+			color: white;
+			font-size: 16px;
+			padding: 15px;
+			margin-top: 20px;
+		}
+		button:hover {
+			background-color: maroon;
+		}
+		aside div.h2{
+			color: black;
+			font-size: 5vh;
+			font-family: "Trebuchet MS",sans-serif;
+			font-weight: 100;
+		}
+		div.head5{
+			margin-left: 270px;
+			font-family: "Trebuchet MS",sans-serif;
+			font-size:1.5em;
+			margin-bottom: -70px;
+		}
+	</style>
+</head>
+<body class="body">
+	<header class="header">
+		<img src="logo.png" alt="LOGO" id="logo">
+		<div id="name">
+			Help <span id="span">Desk</span>
+		</div>
+		<div id="motto">
+			Guidance. Assistance. Assurance.
+		</div>
+		<nav class="nav">
+			<a href="Homepage.html" title="main page" class="headerlinks">HOME</a>
+			<a href="mailto:adityadev2612@gmail.com" class="headerlinks">CONTACT US</a>
+			<a href="Login.html" title="login/register" class="headerlinks" target="_blank">LOGIN</a>
+			<a href="registration.html" title="login" id="currentpage" target="_blank">REGISTER</a>
+		</nav>
+	</header>
+	<div class="head5">
+		<br><br>Register
+	</div>
+	<form class="form1" onsubmit="return validate()" action="http://localhost/create_db_p.php" method="post">
+		<div class="form-control">
+		<b>Full Name:</b><br>
+		<input type="text" id= "username" placeholder="Enter Full Name" name="name" required autofocus>
+		<label id="lblema" style="color: red;float: right; margin-right: 670px; margin-top: 15px; font-size: 1.2em; visibility:hidden;">Invalid</label>
+		</div>
+
+		<div class="form-control">
+		<b>Email:</b><br>
+		<input type="Email" id= "ema" placeholder="Enter Email" name="email" required>
+		<label id="lblpnumber" style="color: red;float: right; margin-right: 670px; margin-top: 15px; font-size: 1.2em; visibility:hidden;">Invalid</label>
+		</div>
+
+		<div class="form-control">
+		<b>Phone Number:</b><br>
+		<input type="number" id= "pnumber" placeholder="Enter Phone Number" name="phonenum" required>
+		<label id="lblpassword" style="color: red;float: right; margin-right: 670px; margin-top: 15px; font-size: 1.2em; visibility:hidden;">Invalid</label>	
+		</div>
+		<div class="form-control">	
+
+		<b>Full Address:</b><br>
+		<input type="text" id="input6" placeholder="Enter address" name="address" required>
+		</div>
+
+		<div class="form-control">
+		<b>City:</b><br>
+		<input type="text" id="input7" placeholder="Enter city" name="city" required>
+		</div>
+
+		<div class="form-control">
+		<b>Postal code:</b><br>
+		<input type="number" id="input8" placeholder="Enter postal code" name="pin" required>
+		</div>
+
+		<div class="form-control">
+		<b>Requirement of the patient:</b><br>
+		<input type="hidden" name="toh1" value=0>
+		<br>
+		<b>Medical expenses</b>
+		<input type="checkbox" id="input9" name="toh1" value=1></input>
+		<input type="hidden" name="toh2" value=0>
+		<br>
+		<b>Accomodation</b>
+		<input type="checkbox" id="input10" name="toh2" value=1></input>
+		<input type="hidden" name="toh3" value=0>
+		<br><b>Provision of food</b>
+		<input type="checkbox" id="input11" name="toh3" value=1></input>
+		<input type="hidden" name="toh4" value=0>
+		<br><b>Traveling expenses</b>
+		<input type="checkbox" id="input12" name="toh4" value=1></input>
+		</div>
+
+		<div class="form-control">
+		<b>Number of people travelling with patient:</b><br>
+		<input type="number" id="input13" placeholder="Number of people" name="ppl" required>
+		</div>
+
+		<div class="form-control">
+		<b>Password:</b><br>
+		<input type="password" id= "password" placeholder="Enter Password" name="pass" required>
+		</div>
+
+		<button id="mybutton" type="submit" name="register">Submit</button>
+	</form>
+</body>
+</html>
